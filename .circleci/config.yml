@@ -11,15 +11,10 @@ jobs:
             gradle test
       - store_test_results:
           path: build/test-results
-      - store_artifacts:
-          path: /code/test-results
-          destination: prefix
       -run:
           name: The gradle jar Step
           command:
             gradle jar
-      - store_test_results:
-          path: /build/libs
       - store_artifacts:
-          path: /code/test-results
+          path: /build/libs
           destination: prefix
