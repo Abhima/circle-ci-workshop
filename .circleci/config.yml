@@ -11,7 +11,7 @@ jobs:
             gradle test
       - store_test_results:
           path: build/test-results
-      -run:
+      - run:
           name: The gradle jar Step
           command:
             gradle jar
