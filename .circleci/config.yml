@@ -15,6 +15,7 @@ jobs:
           path: /code/test-results
           destination: prefix
       -run:
+          name: The gradle jar Step
           command:
             gradle jar
       - store_test_results:
